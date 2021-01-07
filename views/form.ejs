@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume Maker</title>
+        <link rel="Stylesheet" href="css/form.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    </head>
+</html>
+<body>
+<div class="newPost" >
+    <h3>Resume Generator</h3>
+    <form id="poetry-form" action="/create-resume" method="POST">
+        <input type="text" name="summary" id="summary" placeholder="Profile Summary"/>
+        <input type="text" name="name" id="name" placeholder="Enter Name here"/>
+        <input type="text" name="email" id="email" placeholder="Enter Email"/>
+        <input type="text" name="contact" id="contact" placeholder="Enter Contact"/>
+        <input type="text" name="imageURL" id="imageURL" placeholder="Image URL"/>
+        <hr>
+        <B>Project 1:</B><br>
+        <input type="text" name="proj1"  placeholder="Project1"/>
+        <B>Project 2:</B><br>
+        <input type="text" name="proj2" placeholder="Project2"/>
+        <input type="text" name="skills" id="skills" placeholder="Skills"/>
+        <textarea class="editor" placeholder="Achievements"></textarea>
+        <hr>
+        <div class="buttons">
+        <button data-func="clear" type="button">clear</button>
+        <input data-func="save"  type="submit" id="add-poetry" value="Save">
+        </div>
+    </form>
+  </div>
+</body>
+<script>
+
+ $('button[data-func="clear"]').click(function(){
+    $('.editor').textContent('');
+  });
+</script>

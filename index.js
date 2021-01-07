@@ -1,19 +1,27 @@
 const express=require('express');
+const bodyParser=require('body-parser');
 const app = express();
-let counter=1;
+let name=1;
 
-/*
-To Do's
-1 - Create a new Route for home page
-2 - Home page template file must have a button that links to the resume route
-3 - Resume route should diplay your dummy resume
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+app.get("/",function (req,res)
+{res.render("form.ejs",{name:"Harsh Joshi"});});
 
-*/
+app.get("/resume",function (req,res)
+{res.render("resume.ejs",{summary:"Harsh Joshi"});});
 
-app.get("/resume",function(req,res){
-     res.render("index.ejs",{name:counter});
+app.post("/create-resume",function(req,res)
+{res.render("resume.ejs",
+
+{summary:req.body.summary,
+    name:req.body.name,
+    email:req.body.email
 });
-app.use(express.static('public'))
+});
+
+app.use(express.static('public'));
 
 app.listen(3000,function(){
     console.log("Server is up");

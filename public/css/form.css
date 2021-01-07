@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700);
+ @import url(https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin-ext,latin);
+ *, *:before, *:after {
+	 box-sizing: border-box;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: greyscale;
+}
+body {
+        font-family: 'Open Sans', arial, sans-serif;
+        color: black;
+        font-size: inherit;
+        background: white;
+}
+
+.nav-buttons {
+	border-radius: 50%;
+	display: block;
+	width: 70px;
+	height: 70px;
+	background:inherit;
+	color:#22A39F;
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+	text-decoration: none;
+  }
+.containerFloat{
+    bottom: 0;
+    position: fixed;
+    margin: 1em;
+    right: 0px;
+    }
+    .containerFloatLeft{
+    bottom: 0;
+    position: fixed;
+    margin: 1em;
+    left: 0px;
+    }
+ .newPost {
+	 margin: 50px auto;
+	 padding: 50px 40px;
+	 width: 100%;
+	 max-width: 800px;
+	 min-width: 480px;
+	 background: #fff;
+	 font-family: 'Asap', sans-serif;
+}
+ .newPost h3 {
+	 margin: 0px 0px 20px 0px;
+	 font-size: 30px;
+	 color: #2e3641;
+}
+ .newPost input[type="text"] {
+	 padding-left: 15px;
+	 width: 100%;
+	 height: 45px;
+	 border: 1px solid #c1cfd9;
+	 box-shadow: inset 0px 0px 3px #c1cfd9;
+	 outline: none;
+	 font-family: 'Bree Serif', serif;
+	 font-size: 24px;
+	 color: #001524;
+	 margin-bottom: 20px;
+}
+ .newPost .toolbar {
+	 background: #2e3641;
+}
+ .newPost .toolbar button {
+	 float: left;
+	 width: 45px;
+	 height: 45px;
+	 background: #2e3641;
+	 border: none;
+	 border-right: 1px solid #434f5f;
+	 color: #c1cfd9;
+	 outline: none;
+}
+ .newPost .toolbar button:hover {
+	 background: #394250;
+	 color: #b1c3cf;
+}
+ .newPost .toolbar .customSelect {
+	 float: right;
+	 position: relative;
+}
+ .newPost .toolbar .customSelect select {
+	 appearance: none;
+	 border-radius: 0;
+	 border: none;
+	 background: #2e3641;
+	 height: 45px;
+	 padding-left: 10px;
+	 padding-right: 25px;
+	 color: #c1cfd9;
+	 border-left: 1px solid #434f5f;
+	 outline: none;
+	 font-weight: bold;
+	 cursor: pointer;
+}
+ .newPost .toolbar .customSelect select:hover {
+	 background: #394250;
+	 color: #b1c3cf;
+}
+ .newPost .toolbar .customSelect:after {
+	 content: "\f0dc";
+	 font-family: FontAwesome;
+	 color: #c1cfd9;
+	 position: absolute;
+	 right: 10px;
+	 top: 15px;
+}
+ .newPost .toolbar:after {
+	 content: '';
+	 display: block;
+	 clear: both;
+}
+ .newPost .editor {
+	 min-height: 300px;
+	 width: 100%;
+	 resize: none;
+	 border: 1px solid #c1cfd9;
+	 box-shadow: inset 0px 0px 3px #c1cfd9;
+	 outline: none;
+	 padding: 15px;
+	 margin-bottom: 20px;
+	 position: relative;
+}
+ .newPost .editor .saved {
+	 position: absolute;
+	 bottom: 0;
+	 right: 0;
+	 display: block;
+	 width: 45px;
+	 height: 45px;
+	 line-height: 45px;
+	 text-align: center;
+	 color: #fff;
+	 text-transform: uppercase;
+	 background: #c1cfd9;
+	 font-weight: bold;
+	 border-top-left-radius: 15px;
+}
+ .newPost .buttons {
+	 float: right;
+}
+ .newPost .buttons button {
+	 float: left;
+	 width: 120px;
+	 height: 45px;
+	 border: none;
+	 color: #fff;
+	 text-transform: uppercase;
+	 outline: none;
+	 margin-right: 20px;
+	 font-weight: bold;
+	 background: #c1cfd9;
+	 text-decoration: none;
+}
+.newPost .buttons #add-poetry {
+	float: left;
+	width: 120px;
+	height: 45px;
+	border: none;
+	color: #fff;
+	margin-left: 5px;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	margin-right: 20px;
+	font-weight: bold;
+	background: #58ca6b;
+	text-decoration: none;
+}
+ .newPost .buttons button:last-of-type {
+	 margin-right: 0px;
+	 background: #f97e76;
+}
+ .newPost .buttons button:last-of-type:hover {
+	 background: #fa958e;
+}
+ .newPost .buttons button:active {
+	 box-shadow: inset 0px 4px rgba(0, 0, 0, 0.05);
+}
+ .newPost .buttons button:hover {
+	 background: #d1dbe3;
+}
+.newPost .buttons #add-poetry :last-of-type {
+	margin-right: 0px;
+	background: #f97e76;
+}
+.newPost .buttons #add-poetry :last-of-type:hover {
+	background: #fa958e;
+}
+.newPost .buttons #add-poetry :active {
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.05);
+}
+.newPost .buttons #add-poetry :hover {
+	background: #d1dbe3;
+}
+ .newPost .buttons:after {
+	 content: '';
+	 display: block;
+	 clear: both;
+}
+ .newPost:after {
+	 content: '';
+	 display: block;
+	 clear: both;
+}
+ 
